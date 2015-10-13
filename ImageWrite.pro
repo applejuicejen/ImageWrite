@@ -7,5 +7,11 @@ OBJECTS_DIR=$$PWD/obj
 CONFIG-=qt
 #use C++ 11
 CONFIG +=c++11
+DEFINES+=NDEBUG
 #add source files
-SOURCES+=$$PWD/src/main.cpp
+SOURCES+=$$PWD/src/main.cpp \
+         $$PWD/src/ImageWrite.cpp
+
+HEADERS+=$$PWD/include/ImageWrite.h
+
+INCLUDEPATH+=$$PWD/include
